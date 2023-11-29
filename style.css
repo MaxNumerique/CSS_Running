@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* background: #000; */
+    background-image: url("./assets/maxbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.gif img {
+    width: 10em;
+    height: 15em;
+}
+.frame img {
+    width: 10em;
+    height: 15em;
+}
+
+.frame {
+    position: absolute;
+    transform-origin: center;
+    top: 65%;
+    left: 35%;
+}
+
+.cadavre {
+    animation: 12ss cadavre linear infinite;
+}
+
+@keyframes cadavre {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    26% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.gif {
+    position: absolute;
+    transform-origin: center;
+    top: 65%;
+    right: 50%;
+}
+
+
+
+.runner {
+    animation: 12s runner linear infinite;
+}
+
+@keyframes runner {
+    0% {
+        transform: translateX(100vh);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(-12vh);
+        opacity: 1;
+    }
+    26% {
+        transform: translateX(-12vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-12vh);
+        opacity: 0;
+    }
+}
+
+.heisenberg {
+    animation: 6s heisenberg linear infinite;
+    right: 15%;
+}
+
+@keyframes heisenberg {
+    0% {
+        transform: translateX(100vh);
+    }
+    55% {
+        transform: translateX(-73vh);
+        opacity: 1;
+    }
+    56% {
+        transform: translateX(-73vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-73vh);
+        opacity: 0;
+    }
+}
+
+.heisenberg2 {
+    animation: 6s heisenberg2 linear infinite;   
+}
+
+@keyframes heisenberg2 {
+    0% {
+        transform: translateX(0vh);
+        opacity: 0;
+    }
+    76% {
+        transform: translateX(0vh);
+        opacity: 0;
+    }
+    77% {
+        transform: translateX(0vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-73vh);
+        opacity: 1;
+    }
+}
